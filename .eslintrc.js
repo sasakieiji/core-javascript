@@ -5,6 +5,13 @@ module.exports = {
         "node": true
     },
     "extends": "eslint:recommended",
+    /* 아래함수가 현재 파일에 없어도 오류를 출력하지 않음 global에 선언해놓은것으로 인식하게 함 */ 
+    "globals": {
+        getNode:true,
+        getNodes:true,
+        attr: true,
+        insertLast:true
+    }
     "overrides": [
         {
             "env": {
